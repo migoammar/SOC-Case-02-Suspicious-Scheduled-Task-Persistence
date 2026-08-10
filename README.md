@@ -72,10 +72,12 @@ logsource:
   product: windows
   service: security
 detection:
-  selection:
+  selection1:
     EventID: 4698
     Message|contains: '<Hidden>true</Hidden>'
-  condition: selection
+  selection2:
+    Message|contains: 'tasklist'
+  condition: selection1 and selection2
 falsepositives:
   - Legitimate IT-administered scheduled tasks (e.g. software updates or cleanup scripts) configured as hidden to avoid user interference
 level: medium
