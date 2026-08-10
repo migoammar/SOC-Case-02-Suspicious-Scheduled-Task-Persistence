@@ -63,7 +63,7 @@ index=main EventCode=4698 Message="*tasklist*"
 
 ```yaml
 title: Hidden Scheduled Task Executing Discovery Command
-id: <UUID>
+id: c50ed77c-4575-4ffb-a9cf-ec142e67f155
 status: experimental
 description: Detects a hidden scheduled task configured to run reconnaissance commands (e.g. tasklist) to identify active defense mechanisms, indicating potential Persistence and Defense Evasion behavior.
 author: MIRGANI AMMAR
